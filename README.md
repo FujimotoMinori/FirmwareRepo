@@ -1,2 +1,2 @@
 # FirmwareRepo
-to put the correct mcs/bit file og firmware
+to put the correct mcs/bit file of firmware
