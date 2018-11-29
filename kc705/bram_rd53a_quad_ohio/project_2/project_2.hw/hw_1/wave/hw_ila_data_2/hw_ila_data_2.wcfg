@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/bram_rd53a_quad_ohio/project_2/project_2.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="1001fs"></ZoomEndTime>
+      <Cursor1Time time="0fs"></Cursor1Time>
+   </zoom_setting>
+   <WVObjectSize size="12" />
+   <wvobject type="array" fp_name="app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/probe0">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="ElementShortName">app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/probe0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">probe0[31:0]</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/rx_data_s">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="ElementShortName">app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/rx_data_s[63:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_data_s[63:0]</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/rx_fifo_din[0]">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="ElementShortName">app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/rx_fifo_din[0][63:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_fifo_din[0][63:0]</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/lane_loop[0].rx_fifo_wren_reg">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="ElementShortName">app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/lane_loop[0].rx_fifo_wren_reg</obj_property>
+      <obj_property name="ObjectShortName">lane_loop[0].rx_fifo_wren_reg</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/probe4">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="ElementShortName">app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/probe4</obj_property>
+      <obj_property name="ObjectShortName">probe4</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/probe5">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="ElementShortName">app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/probe5</obj_property>
+      <obj_property name="ObjectShortName">probe5</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/probe6">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="ElementShortName">app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/probe6</obj_property>
+      <obj_property name="ObjectShortName">probe6</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/rx_valid_s">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="ElementShortName">app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/rx_valid_s</obj_property>
+      <obj_property name="ObjectShortName">rx_valid_s</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/probe8">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="ElementShortName">app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/probe8[31:0]</obj_property>
+      <obj_property name="ObjectShortName">probe8[31:0]</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/rx_fifo_rden_reg_n_1_">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="ElementShortName">app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/rx_fifo_rden_reg_n_1_[0:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_fifo_rden_reg_n_1_[0:0]</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/rx_fifo_empty">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="ElementShortName">app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/rx_fifo_empty[0:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_fifo_empty[0:0]</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/probe11">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="ElementShortName">app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/probe11</obj_property>
+      <obj_property name="ObjectShortName">probe11</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+</wave_config>

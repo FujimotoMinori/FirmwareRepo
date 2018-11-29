@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Sun Oct 14 15:12:24 2018
+# Process ID: 2961
+# Current directory: /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/bram_rd53a_quad_ohio/yarr/project_1/project_1.runs/axis_data_fifo_0_synth_1
+# Command line: vivado -log axis_data_fifo_0.vds -mode batch -messageDb vivado.pb -notrace -source axis_data_fifo_0.tcl
+# Log file: /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/bram_rd53a_quad_ohio/yarr/project_1/project_1.runs/axis_data_fifo_0_synth_1/axis_data_fifo_0.vds
+# Journal file: /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/bram_rd53a_quad_ohio/yarr/project_1/project_1.runs/axis_data_fifo_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source axis_data_fifo_0.tcl -notrace

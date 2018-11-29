@@ -1,0 +1,528 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Sun Oct 14 17:59:10 2018
+# Process ID: 26960
+# Current directory: /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/bram_rd53a_quad_ohio
+# Command line: vivado
+# Log file: /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/bram_rd53a_quad_ohio/vivado.log
+# Journal file: /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/bram_rd53a_quad_ohio/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project project_2 /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/bram_rd53a_quad_ohio/project_2 -part xc7k325tffg900-2
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2016.2/data/ip'.
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 5831.145 ; gain = 6.000 ; free physical = 1265 ; free virtual = 4347
+set_property board_part xilinx.com:kc705:part0:1.3 [current_project]
+add_files -norecurse {/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/xpressk7/app.vhd /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/bram_yarr_kc705.vhd /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/xpressk7/bram_rd53a_quad_ohio-325/board_pkg.vhd /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/xpressk7/app_pkg.vhd}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+add_files {/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/rtl/trigger-logic /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/rtl/kintex7 /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/rtl/common /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/rtl/tx-core /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/rtl/i2c-master}
+update_compile_order -fileset sources_1
+add_files -norecurse {/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/pcie_7x_0/pcie_7x_0.xci /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_bridge_ctrl_fifo/rx_bridge_ctrl_fifo.xci /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_32x512/fifo_32x512.xci /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_ddr/ila_ddr.xci /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_256x16/fifo_256x16.xci /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_axis/ila_axis.xci /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_channel_fifo/rx_channel_fifo.xci /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/axis_data_fifo_1/axis_data_fifo_1.xci /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_29x32/fifo_29x32.xci /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_8x32/fifo_8x32.xci /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_rx_dma_wb/ila_rx_dma_wb.xci /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/mig_7series_0/mig_7series_0.xci /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/tx_fifo/tx_fifo.xci /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/l2p_fifo64/l2p_fifo64.xci /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_64x512/fifo_64x512.xci /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_wsh_pipe/ila_wsh_pipe.xci /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_605x32/fifo_605x32.xci /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_96x512_1/fifo_96x512.xci /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/axis_data_fifo_0/axis_data_fifo_0.xci /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/clk_gen/clk_gen.xci /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_bridge_fifo/rx_bridge_fifo.xci}
+WARNING: [IP_Flow 19-2162] IP 'mig_7series_0' is locked:
+* This IP has board specific outputs. Current project board 'xilinx.com:kc705:part0:1.3' and the board 'unset' used to customize the IP 'mig_7series_0' do not match.
+* Current project part 'xc7k325tffg900-2' and the part 'xc7k160tfbg676-2' used to customize the IP 'mig_7series_0' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+add_files: Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 5962.457 ; gain = 116.344 ; free physical = 1047 ; free virtual = 4199
+export_ip_user_files -of_objects  [get_files  {/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/pcie_7x_0/pcie_7x_0.xci /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_bridge_ctrl_fifo/rx_bridge_ctrl_fifo.xci /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_32x512/fifo_32x512.xci /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_ddr/ila_ddr.xci /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_256x16/fifo_256x16.xci /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_axis/ila_axis.xci /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_channel_fifo/rx_channel_fifo.xci /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/axis_data_fifo_1/axis_data_fifo_1.xci /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_29x32/fifo_29x32.xci /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_8x32/fifo_8x32.xci /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_rx_dma_wb/ila_rx_dma_wb.xci /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/mig_7series_0/mig_7series_0.xci /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/tx_fifo/tx_fifo.xci /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/l2p_fifo64/l2p_fifo64.xci /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_64x512/fifo_64x512.xci /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_wsh_pipe/ila_wsh_pipe.xci /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_605x32/fifo_605x32.xci /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_96x512_1/fifo_96x512.xci /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/axis_data_fifo_0/axis_data_fifo_0.xci /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/clk_gen/clk_gen.xci /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_bridge_fifo/rx_bridge_fifo.xci}] -force -quiet
+update_compile_order -fileset sources_1
+add_files -fileset constrs_1 -norecurse {/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/constrs_kc705.xdc /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/constrs_kc705_timing.xdc /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/constrs_kc705_ila.xdc /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/kc705-fmc-quad-dp-ohio-dbyarr-dataC.xdc}
+launch_runs synth_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_32x512/fifo_32x512.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_rx_dma_wb/ila_rx_dma_wb.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/l2p_fifo64/l2p_fifo64.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_64x512/fifo_64x512.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_96x512_1/fifo_96x512.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_256x16/fifo_256x16.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_channel_fifo/rx_channel_fifo.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_29x32/fifo_29x32.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_8x32/fifo_8x32.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/tx_fifo/tx_fifo.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_605x32/fifo_605x32.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_bridge_ctrl_fifo/rx_bridge_ctrl_fifo.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_bridge_fifo/rx_bridge_fifo.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_ddr/ila_ddr.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_axis/ila_axis.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/axis_data_fifo_1/axis_data_fifo_1.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_wsh_pipe/ila_wsh_pipe.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/axis_data_fifo_0/axis_data_fifo_0.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/clk_gen/clk_gen.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/pcie_7x_0/pcie_7x_0.xci' is already up-to-date
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Implementation target. Since these IPs are locked, no update to the output products cant be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/mig_7series_0/mig_7series_0.xci
+
+[Sun Oct 14 18:18:07 2018] Launched synth_1...
+Run output will be captured here: /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/bram_rd53a_quad_ohio/project_2/project_2.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7k325tffg900-2
+INFO: [Project 1-454] Reading design checkpoint '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/pcie_7x_0/pcie_7x_0.dcp' for cell 'pcie_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/axis_data_fifo_0/axis_data_fifo_0.dcp' for cell 'app_0/axis_rx_fifo'
+INFO: [Project 1-454] Reading design checkpoint '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/axis_data_fifo_1/axis_data_fifo_1.dcp' for cell 'app_0/axis_tx_fifo'
+INFO: [Project 1-454] Reading design checkpoint '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/clk_gen/clk_gen.dcp' for cell 'app_0/clk_gen_cmp'
+INFO: [Project 1-454] Reading design checkpoint '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_rx_dma_wb/ila_rx_dma_wb.dcp' for cell 'app_0/dbg_2.rx_dma_wb_debug'
+INFO: [Project 1-454] Reading design checkpoint '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_bridge_ctrl_fifo/rx_bridge_ctrl_fifo.dcp' for cell 'app_0/wb_dev_gen.cmp_wb_rx_bridge/cmp_rx_bridge_ctrl_fifo'
+INFO: [Project 1-454] Reading design checkpoint '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_bridge_fifo/rx_bridge_fifo.dcp' for cell 'app_0/wb_dev_gen.cmp_wb_rx_bridge/cmp_rx_bridge_fifo'
+INFO: [Project 1-454] Reading design checkpoint '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_channel_fifo/rx_channel_fifo.dcp' for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].cmp_rx_channel_fifo'
+INFO: [Project 1-454] Reading design checkpoint '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/tx_fifo/tx_fifo.dcp' for cell 'app_0/wb_dev_gen.rd53_type_tx.cmp_wb_tx_core/tx_channels[0].cmp_tx_channel/cmp_tx_fifo'
+INFO: [Project 1-454] Reading design checkpoint '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/l2p_fifo64/l2p_fifo64.dcp' for cell 'app_0/wb_exp_comp/l2p_dma/cmp_addr_fifo/U0'
+INFO: [Project 1-454] Reading design checkpoint '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_96x512_1/fifo_96x512.dcp' for cell 'app_0/wb_exp_comp/p2l_dma/cmp_to_wb_fifo/gen_fifo_96bit.cmp_fifo_96x512'
+INFO: [Project 1-454] Reading design checkpoint '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_64x512/fifo_64x512.dcp' for cell 'app_0/wb_exp_comp/wb32/cmp_fifo_to_wb/gen_fifo_64bit.cmp_fifo_64x512'
+INFO: [Netlist 29-17] Analyzing 1885 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.2
+INFO: [Device 21-403] Loading part xc7k325tffg900-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. app_0/clk_gen_cmp/inst/clkin1_ibufg 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'app_0/clk_gen_cmp/clk_250_in' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved for implementation tool. [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/bram_rd53a_quad_ohio/.Xil/Vivado-26960-kekatlaspc9/dcp_20/clk_gen.edf:427]
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'fifo_32x512'. The XDC file /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_32x512/fifo_32x512/fifo_32x512.xdc will not be read for any cell of this module.
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_rx_dma_wb/ila_v6_1/constraints/ila.xdc] for cell 'app_0/dbg_2.rx_dma_wb_debug/inst'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_rx_dma_wb/ila_v6_1/constraints/ila.xdc] for cell 'app_0/dbg_2.rx_dma_wb_debug/inst'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_rx_dma_wb/ila_v6_1/constraints/ila.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/aurora_channel_debug/inst'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_rx_dma_wb/ila_v6_1/constraints/ila.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/aurora_channel_debug/inst'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_rx_dma_wb/ila_v6_1/constraints/ila.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/lane_loop[3].lane_cmp/aurora_lane_debug/inst'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_rx_dma_wb/ila_v6_1/constraints/ila.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/lane_loop[3].lane_cmp/aurora_lane_debug/inst'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_rx_dma_wb/ila_v6_1/constraints/ila.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/lane_loop[2].lane_cmp/aurora_lane_debug/inst'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_rx_dma_wb/ila_v6_1/constraints/ila.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/lane_loop[2].lane_cmp/aurora_lane_debug/inst'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_rx_dma_wb/ila_v6_1/constraints/ila.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/lane_loop[1].lane_cmp/aurora_lane_debug/inst'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_rx_dma_wb/ila_v6_1/constraints/ila.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/lane_loop[1].lane_cmp/aurora_lane_debug/inst'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_rx_dma_wb/ila_v6_1/constraints/ila.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/lane_loop[0].lane_cmp/aurora_lane_debug/inst'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_rx_dma_wb/ila_v6_1/constraints/ila.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/lane_loop[0].lane_cmp/aurora_lane_debug/inst'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/l2p_fifo64/l2p_fifo64/l2p_fifo64.xdc] for cell 'app_0/wb_exp_comp/l2p_dma/cmp_data_fifo/U0/U0'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/l2p_fifo64/l2p_fifo64/l2p_fifo64.xdc] for cell 'app_0/wb_exp_comp/l2p_dma/cmp_data_fifo/U0/U0'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/l2p_fifo64/l2p_fifo64/l2p_fifo64.xdc] for cell 'app_0/wb_exp_comp/l2p_dma/cmp_addr_fifo/U0/U0'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/l2p_fifo64/l2p_fifo64/l2p_fifo64.xdc] for cell 'app_0/wb_exp_comp/l2p_dma/cmp_addr_fifo/U0/U0'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_64x512/fifo_64x512/fifo_64x512.xdc] for cell 'app_0/wb_exp_comp/wb32/cmp_from_wb_fifo/gen_fifo_64bit.cmp_fifo_64x512/U0'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_64x512/fifo_64x512/fifo_64x512.xdc] for cell 'app_0/wb_exp_comp/wb32/cmp_from_wb_fifo/gen_fifo_64bit.cmp_fifo_64x512/U0'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_64x512/fifo_64x512/fifo_64x512.xdc] for cell 'app_0/wb_exp_comp/wb32/cmp_fifo_to_wb/gen_fifo_64bit.cmp_fifo_64x512/U0'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_64x512/fifo_64x512/fifo_64x512.xdc] for cell 'app_0/wb_exp_comp/wb32/cmp_fifo_to_wb/gen_fifo_64bit.cmp_fifo_64x512/U0'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_96x512_1/fifo_96x512/fifo_96x512.xdc] for cell 'app_0/wb_exp_comp/p2l_dma/cmp_to_wb_fifo/gen_fifo_96bit.cmp_fifo_96x512/U0'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_96x512_1/fifo_96x512/fifo_96x512.xdc] for cell 'app_0/wb_exp_comp/p2l_dma/cmp_to_wb_fifo/gen_fifo_96bit.cmp_fifo_96x512/U0'
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'fifo_256x16'. The XDC file /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_256x16/fifo_256x16/fifo_256x16.xdc will not be read for any cell of this module.
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_channel_fifo/rx_channel_fifo/rx_channel_fifo.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/lane_loop[0].cmp_lane_fifo/U0'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_channel_fifo/rx_channel_fifo/rx_channel_fifo.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/lane_loop[0].cmp_lane_fifo/U0'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_channel_fifo/rx_channel_fifo/rx_channel_fifo.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/lane_loop[1].cmp_lane_fifo/U0'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_channel_fifo/rx_channel_fifo/rx_channel_fifo.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/lane_loop[1].cmp_lane_fifo/U0'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_channel_fifo/rx_channel_fifo/rx_channel_fifo.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/lane_loop[2].cmp_lane_fifo/U0'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_channel_fifo/rx_channel_fifo/rx_channel_fifo.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/lane_loop[2].cmp_lane_fifo/U0'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_channel_fifo/rx_channel_fifo/rx_channel_fifo.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/lane_loop[3].cmp_lane_fifo/U0'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_channel_fifo/rx_channel_fifo/rx_channel_fifo.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/lane_loop[3].cmp_lane_fifo/U0'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_channel_fifo/rx_channel_fifo/rx_channel_fifo.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].cmp_rx_channel_fifo/U0'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_channel_fifo/rx_channel_fifo/rx_channel_fifo.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].cmp_rx_channel_fifo/U0'
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'fifo_29x32'. The XDC file /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_29x32/fifo_29x32/fifo_29x32.xdc will not be read for any cell of this module.
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'fifo_8x32'. The XDC file /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_8x32/fifo_8x32/fifo_8x32.xdc will not be read for any cell of this module.
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/tx_fifo/tx_fifo/tx_fifo.xdc] for cell 'app_0/wb_dev_gen.rd53_type_tx.cmp_wb_tx_core/tx_channels[0].cmp_tx_channel/cmp_tx_fifo/U0'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/tx_fifo/tx_fifo/tx_fifo.xdc] for cell 'app_0/wb_dev_gen.rd53_type_tx.cmp_wb_tx_core/tx_channels[0].cmp_tx_channel/cmp_tx_fifo/U0'
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'fifo_605x32'. The XDC file /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_605x32/fifo_605x32/fifo_605x32.xdc will not be read for any cell of this module.
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_bridge_ctrl_fifo/rx_bridge_ctrl_fifo/rx_bridge_ctrl_fifo.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_bridge/cmp_rx_bridge_ctrl_fifo/U0'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_bridge_ctrl_fifo/rx_bridge_ctrl_fifo/rx_bridge_ctrl_fifo.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_bridge/cmp_rx_bridge_ctrl_fifo/U0'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_bridge_fifo/rx_bridge_fifo/rx_bridge_fifo.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_bridge/cmp_rx_bridge_fifo/U0'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_bridge_fifo/rx_bridge_fifo/rx_bridge_fifo.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_bridge/cmp_rx_bridge_fifo/U0'
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'ila_ddr'. The XDC file /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_ddr/ila_v6_1/constraints/ila.xdc will not be read for any cell of this module.
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'ila_axis'. The XDC file /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_axis/ila_v6_1/constraints/ila.xdc will not be read for any cell of this module.
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/axis_data_fifo_1/axis_data_fifo_1/axis_data_fifo_1.xdc] for cell 'app_0/axis_tx_fifo/inst'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/axis_data_fifo_1/axis_data_fifo_1/axis_data_fifo_1.xdc] for cell 'app_0/axis_tx_fifo/inst'
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'ila_wsh_pipe'. The XDC file /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_wsh_pipe/ila_v6_1/constraints/ila.xdc will not be read for any cell of this module.
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/axis_data_fifo_0/axis_data_fifo_0/axis_data_fifo_0.xdc] for cell 'app_0/axis_rx_fifo/inst'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/axis_data_fifo_0/axis_data_fifo_0/axis_data_fifo_0.xdc] for cell 'app_0/axis_rx_fifo/inst'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/clk_gen/clk_gen_board.xdc] for cell 'app_0/clk_gen_cmp/inst'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/clk_gen/clk_gen_board.xdc] for cell 'app_0/clk_gen_cmp/inst'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/clk_gen/clk_gen.xdc] for cell 'app_0/clk_gen_cmp/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/clk_gen/clk_gen.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/clk_gen/clk_gen.xdc:57]
+get_clocks: Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 7070.059 ; gain = 554.672 ; free physical = 68 ; free virtual = 3282
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/clk_gen/clk_gen.xdc] for cell 'app_0/clk_gen_cmp/inst'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/pcie_7x_0/source/pcie_7x_0-PCIE_X0Y0.xdc] for cell 'pcie_0/inst'
+INFO: [Timing 38-2] Deriving generated clocks [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/pcie_7x_0/source/pcie_7x_0-PCIE_X0Y0.xdc:118]
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/pcie_7x_0/source/pcie_7x_0-PCIE_X0Y0.xdc] for cell 'pcie_0/inst'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/constrs_kc705.xdc]
+WARNING: [Vivado 12-180] No cells matched 'pcie_0/U0/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].gt_wrapper_i/gtx_channel.gtxe2_channel_i'. [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/constrs_kc705.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/constrs_kc705.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-180] No cells matched 'pcie_0/U0/inst/gt_top_i/pipe_wrapper_i/pipe_lane[1].gt_wrapper_i/gtx_channel.gtxe2_channel_i'. [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/constrs_kc705.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/constrs_kc705.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-180] No cells matched 'pcie_0/U0/inst/gt_top_i/pipe_wrapper_i/pipe_lane[2].gt_wrapper_i/gtx_channel.gtxe2_channel_i'. [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/constrs_kc705.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/constrs_kc705.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-180] No cells matched 'pcie_0/U0/inst/gt_top_i/pipe_wrapper_i/pipe_lane[3].gt_wrapper_i/gtx_channel.gtxe2_channel_i'. [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/constrs_kc705.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/constrs_kc705.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/constrs_kc705.xdc]
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/constrs_kc705_timing.xdc]
+WARNING: [Vivado 12-508] No pins matched 'pcie_0/U0/inst/pcie_top_i/pcie_7x_i/pcie_block_i/CFGINTERRUPTN'. [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/constrs_kc705_timing.xdc:3]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_pins pcie_0/U0/inst/pcie_top_i/pcie_7x_i/pcie_block_i/CFGINTERRUPTN]'. [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/constrs_kc705_timing.xdc:3]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/constrs_kc705_timing.xdc]
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/constrs_kc705_ila.xdc]
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/constrs_kc705_ila.xdc]
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/kc705-fmc-quad-dp-ohio-dbyarr-dataC.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sda_io'. [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/kc705-fmc-quad-dp-ohio-dbyarr-dataC.xdc:136]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/kc705-fmc-quad-dp-ohio-dbyarr-dataC.xdc:136]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'scl_io'. [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/kc705-fmc-quad-dp-ohio-dbyarr-dataC.xdc:137]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/kc705-fmc-quad-dp-ohio-dbyarr-dataC.xdc:137]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-69] Command failed: Slew type 'FAST' is not supported by I/O standard 'LVDS_25' [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/kc705-fmc-quad-dp-ohio-dbyarr-dataC.xdc:144]
+WARNING: [Vivado 12-584] No ports matched 'ext_busy_*'. [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/kc705-fmc-quad-dp-ohio-dbyarr-dataC.xdc:149]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/kc705-fmc-quad-dp-ohio-dbyarr-dataC.xdc:149]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sda_io'. [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/kc705-fmc-quad-dp-ohio-dbyarr-dataC.xdc:156]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/kc705-fmc-quad-dp-ohio-dbyarr-dataC.xdc:156]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'scl_io'. [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/kc705-fmc-quad-dp-ohio-dbyarr-dataC.xdc:157]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/kc705-fmc-quad-dp-ohio-dbyarr-dataC.xdc:157]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-646] clock 'clk_160_s' not found. [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/kc705-fmc-quad-dp-ohio-dbyarr-dataC.xdc:186]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock clk_160_s'. [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/kc705-fmc-quad-dp-ohio-dbyarr-dataC.xdc:186]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'clk_160_s' not found. [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/kc705-fmc-quad-dp-ohio-dbyarr-dataC.xdc:187]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock clk_160_s'. [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/kc705-fmc-quad-dp-ohio-dbyarr-dataC.xdc:187]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/kc705-fmc-quad-dp-ohio-dbyarr-dataC.xdc]
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_rx_dma_wb/ila_rx_dma_wb.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_rx_dma_wb/ila_rx_dma_wb.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_rx_dma_wb/ila_rx_dma_wb.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_rx_dma_wb/ila_rx_dma_wb.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_rx_dma_wb/ila_rx_dma_wb.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_rx_dma_wb/ila_rx_dma_wb.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/l2p_fifo64/l2p_fifo64.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/l2p_fifo64/l2p_fifo64.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_64x512/fifo_64x512.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_64x512/fifo_64x512.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_96x512_1/fifo_96x512.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_channel_fifo/rx_channel_fifo.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_channel_fifo/rx_channel_fifo.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_channel_fifo/rx_channel_fifo.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_channel_fifo/rx_channel_fifo.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_channel_fifo/rx_channel_fifo.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/tx_fifo/tx_fifo.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_bridge_ctrl_fifo/rx_bridge_ctrl_fifo.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_bridge_fifo/rx_bridge_fifo.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/axis_data_fifo_1/axis_data_fifo_1.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/axis_data_fifo_0/axis_data_fifo_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/clk_gen/clk_gen.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/pcie_7x_0/pcie_7x_0.dcp'
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'fifo_32x512'. The XDC file /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_32x512/fifo_32x512/fifo_32x512_clocks.xdc will not be read for any cell of this module.
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/l2p_fifo64/l2p_fifo64/l2p_fifo64_clocks.xdc] for cell 'app_0/wb_exp_comp/l2p_dma/cmp_data_fifo/U0/U0'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/l2p_fifo64/l2p_fifo64/l2p_fifo64_clocks.xdc] for cell 'app_0/wb_exp_comp/l2p_dma/cmp_data_fifo/U0/U0'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/l2p_fifo64/l2p_fifo64/l2p_fifo64_clocks.xdc] for cell 'app_0/wb_exp_comp/l2p_dma/cmp_addr_fifo/U0/U0'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/l2p_fifo64/l2p_fifo64/l2p_fifo64_clocks.xdc] for cell 'app_0/wb_exp_comp/l2p_dma/cmp_addr_fifo/U0/U0'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_64x512/fifo_64x512/fifo_64x512_clocks.xdc] for cell 'app_0/wb_exp_comp/wb32/cmp_from_wb_fifo/gen_fifo_64bit.cmp_fifo_64x512/U0'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_64x512/fifo_64x512/fifo_64x512_clocks.xdc] for cell 'app_0/wb_exp_comp/wb32/cmp_from_wb_fifo/gen_fifo_64bit.cmp_fifo_64x512/U0'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_64x512/fifo_64x512/fifo_64x512_clocks.xdc] for cell 'app_0/wb_exp_comp/wb32/cmp_fifo_to_wb/gen_fifo_64bit.cmp_fifo_64x512/U0'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_64x512/fifo_64x512/fifo_64x512_clocks.xdc] for cell 'app_0/wb_exp_comp/wb32/cmp_fifo_to_wb/gen_fifo_64bit.cmp_fifo_64x512/U0'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_96x512_1/fifo_96x512/fifo_96x512_clocks.xdc] for cell 'app_0/wb_exp_comp/p2l_dma/cmp_to_wb_fifo/gen_fifo_96bit.cmp_fifo_96x512/U0'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_96x512_1/fifo_96x512/fifo_96x512_clocks.xdc] for cell 'app_0/wb_exp_comp/p2l_dma/cmp_to_wb_fifo/gen_fifo_96bit.cmp_fifo_96x512/U0'
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'fifo_256x16'. The XDC file /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_256x16/fifo_256x16/fifo_256x16_clocks.xdc will not be read for any cell of this module.
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_channel_fifo/rx_channel_fifo/rx_channel_fifo_clocks.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/lane_loop[0].cmp_lane_fifo/U0'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_channel_fifo/rx_channel_fifo/rx_channel_fifo_clocks.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/lane_loop[0].cmp_lane_fifo/U0'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_channel_fifo/rx_channel_fifo/rx_channel_fifo_clocks.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/lane_loop[1].cmp_lane_fifo/U0'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_channel_fifo/rx_channel_fifo/rx_channel_fifo_clocks.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/lane_loop[1].cmp_lane_fifo/U0'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_channel_fifo/rx_channel_fifo/rx_channel_fifo_clocks.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/lane_loop[2].cmp_lane_fifo/U0'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_channel_fifo/rx_channel_fifo/rx_channel_fifo_clocks.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/lane_loop[2].cmp_lane_fifo/U0'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_channel_fifo/rx_channel_fifo/rx_channel_fifo_clocks.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/lane_loop[3].cmp_lane_fifo/U0'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_channel_fifo/rx_channel_fifo/rx_channel_fifo_clocks.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/lane_loop[3].cmp_lane_fifo/U0'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_channel_fifo/rx_channel_fifo/rx_channel_fifo_clocks.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].cmp_rx_channel_fifo/U0'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_channel_fifo/rx_channel_fifo/rx_channel_fifo_clocks.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].cmp_rx_channel_fifo/U0'
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'fifo_29x32'. The XDC file /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_29x32/fifo_29x32/fifo_29x32_clocks.xdc will not be read for any cell of this module.
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'fifo_8x32'. The XDC file /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_8x32/fifo_8x32/fifo_8x32_clocks.xdc will not be read for any cell of this module.
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/tx_fifo/tx_fifo/tx_fifo_clocks.xdc] for cell 'app_0/wb_dev_gen.rd53_type_tx.cmp_wb_tx_core/tx_channels[0].cmp_tx_channel/cmp_tx_fifo/U0'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/tx_fifo/tx_fifo/tx_fifo_clocks.xdc] for cell 'app_0/wb_dev_gen.rd53_type_tx.cmp_wb_tx_core/tx_channels[0].cmp_tx_channel/cmp_tx_fifo/U0'
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'fifo_605x32'. The XDC file /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_605x32/fifo_605x32/fifo_605x32_clocks.xdc will not be read for any cell of this module.
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_bridge_ctrl_fifo/rx_bridge_ctrl_fifo/rx_bridge_ctrl_fifo_clocks.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_bridge/cmp_rx_bridge_ctrl_fifo/U0'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_bridge_ctrl_fifo/rx_bridge_ctrl_fifo/rx_bridge_ctrl_fifo_clocks.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_bridge/cmp_rx_bridge_ctrl_fifo/U0'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_bridge_fifo/rx_bridge_fifo/rx_bridge_fifo_clocks.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_bridge/cmp_rx_bridge_fifo/U0'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_bridge_fifo/rx_bridge_fifo/rx_bridge_fifo_clocks.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_bridge/cmp_rx_bridge_fifo/U0'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/axis_data_fifo_1/axis_data_fifo_1/axis_data_fifo_1_clocks.xdc] for cell 'app_0/axis_tx_fifo/inst'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/axis_data_fifo_1/axis_data_fifo_1/axis_data_fifo_1_clocks.xdc] for cell 'app_0/axis_tx_fifo/inst'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/axis_data_fifo_0/axis_data_fifo_0/axis_data_fifo_0_clocks.xdc] for cell 'app_0/axis_rx_fifo/inst'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/axis_data_fifo_0/axis_data_fifo_0/axis_data_fifo_0_clocks.xdc] for cell 'app_0/axis_rx_fifo/inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pcie_0/inst/inst/phy_lnk_up_cdc'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pcie_0/inst/inst/phy_lnk_up_cdc'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pcie_0/inst/inst/pl_received_hot_rst_cdc'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pcie_0/inst/inst/pl_received_hot_rst_cdc'
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 966 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 960 instances
+  IBUFDS_DIFF_OUT => IBUFDS_DIFF_OUT (IBUFDS, IBUFDS): 4 instances
+  OBUFDS => OBUFDS: 2 instances
+
+open_run: Time (s): cpu = 00:02:56 ; elapsed = 00:02:08 . Memory (MB): peak = 7185.883 ; gain = 1082.871 ; free physical = 70 ; free virtual = 3085
+close_design
+close_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 7188.227 ; gain = 0.000 ; free physical = 87 ; free virtual = 3031
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_32x512/fifo_32x512.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_rx_dma_wb/ila_rx_dma_wb.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/l2p_fifo64/l2p_fifo64.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_64x512/fifo_64x512.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_96x512_1/fifo_96x512.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_256x16/fifo_256x16.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_channel_fifo/rx_channel_fifo.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_29x32/fifo_29x32.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_8x32/fifo_8x32.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/tx_fifo/tx_fifo.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_605x32/fifo_605x32.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_bridge_ctrl_fifo/rx_bridge_ctrl_fifo.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_bridge_fifo/rx_bridge_fifo.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_ddr/ila_ddr.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_axis/ila_axis.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/axis_data_fifo_1/axis_data_fifo_1.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_wsh_pipe/ila_wsh_pipe.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/axis_data_fifo_0/axis_data_fifo_0.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/clk_gen/clk_gen.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/pcie_7x_0/pcie_7x_0.xci' is already up-to-date
+[Sun Oct 14 18:26:59 2018] Launched impl_1...
+Run output will be captured here: /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/bram_rd53a_quad_ohio/project_2/project_2.runs/impl_1/runme.log
+write_cfgmem  -format mcs -size 128 -interface BPIx16 -loadbit "up 0x00000000 /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/bram_rd53a_quad_ohio/project_2/project_2.runs/impl_1/top_level.bit " -file "/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/fromproject2.mcs"
+Creating config memory files...
+INFO: [Writecfgmem 68-23] Start address provided has been multiplied by a factor of 2 due to the use of interface BPIX16.
+Creating bitstream load up from address 0x00000000
+Loading bitfile /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/bram_rd53a_quad_ohio/project_2/project_2.runs/impl_1/top_level.bit
+Writing file /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/fromproject2.mcs
+Writing log file /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/fromproject2.prm
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          BPIX16
+Size               128M
+Start Address      0x00000000
+End Address        0x07FFFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x00AE9D9B    Oct 14 18:40:54 2018    /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/bram_rd53a_quad_ohio/project_2/project_2.runs/impl_1/top_level.bit
+write_cfgmem: Time (s): cpu = 00:00:04 ; elapsed = 00:00:19 . Memory (MB): peak = 7188.227 ; gain = 0.000 ; free physical = 1368 ; free virtual = 2877
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 1713 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'app_0/clk_gen_cmp/clk_250_in' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved for implementation tool. [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/bram_rd53a_quad_ohio/project_2/project_2.runs/impl_1/.Xil/Vivado-16043-kekatlaspc9/dcp_20/clk_gen.edf:427]
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/bram_rd53a_quad_ohio/.Xil/Vivado-26960-kekatlaspc9/dcp/top_level_early.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/clk_gen/clk_gen.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/clk_gen/clk_gen.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/pcie_7x_0/source/pcie_7x_0-PCIE_X0Y0.xdc:118]
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/bram_rd53a_quad_ohio/.Xil/Vivado-26960-kekatlaspc9/dcp/top_level_early.xdc]
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/bram_rd53a_quad_ohio/.Xil/Vivado-26960-kekatlaspc9/dcp/top_level.xdc]
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/bram_rd53a_quad_ohio/.Xil/Vivado-26960-kekatlaspc9/dcp/top_level.xdc]
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/bram_rd53a_quad_ohio/.Xil/Vivado-26960-kekatlaspc9/dcp/top_level_late.xdc]
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/bram_rd53a_quad_ohio/.Xil/Vivado-26960-kekatlaspc9/dcp/top_level_late.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 7290.105 ; gain = 0.000 ; free physical = 830 ; free virtual = 2750
+Restored from archive | CPU: 3.830000 secs | Memory: 46.046471 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 7290.105 ; gain = 0.000 ; free physical = 832 ; free virtual = 2751
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 966 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 960 instances
+  RAM32M => RAM32M (RAMS32, RAMS32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32): 6 instances
+
+open_run: Time (s): cpu = 00:01:13 ; elapsed = 00:01:36 . Memory (MB): peak = 7387.836 ; gain = 199.609 ; free physical = 774 ; free virtual = 2677
+open_report: Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 7414.559 ; gain = 19.293 ; free physical = 635 ; free virtual = 2583
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7k325tffg900-2
+INFO: [Project 1-454] Reading design checkpoint '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/pcie_7x_0/pcie_7x_0.dcp' for cell 'pcie_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/axis_data_fifo_0/axis_data_fifo_0.dcp' for cell 'app_0/axis_rx_fifo'
+INFO: [Project 1-454] Reading design checkpoint '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/axis_data_fifo_1/axis_data_fifo_1.dcp' for cell 'app_0/axis_tx_fifo'
+INFO: [Project 1-454] Reading design checkpoint '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/clk_gen/clk_gen.dcp' for cell 'app_0/clk_gen_cmp'
+INFO: [Project 1-454] Reading design checkpoint '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_rx_dma_wb/ila_rx_dma_wb.dcp' for cell 'app_0/dbg_2.rx_dma_wb_debug'
+INFO: [Project 1-454] Reading design checkpoint '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_bridge_ctrl_fifo/rx_bridge_ctrl_fifo.dcp' for cell 'app_0/wb_dev_gen.cmp_wb_rx_bridge/cmp_rx_bridge_ctrl_fifo'
+INFO: [Project 1-454] Reading design checkpoint '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_bridge_fifo/rx_bridge_fifo.dcp' for cell 'app_0/wb_dev_gen.cmp_wb_rx_bridge/cmp_rx_bridge_fifo'
+INFO: [Project 1-454] Reading design checkpoint '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_channel_fifo/rx_channel_fifo.dcp' for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].cmp_rx_channel_fifo'
+INFO: [Project 1-454] Reading design checkpoint '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/tx_fifo/tx_fifo.dcp' for cell 'app_0/wb_dev_gen.rd53_type_tx.cmp_wb_tx_core/tx_channels[0].cmp_tx_channel/cmp_tx_fifo'
+INFO: [Project 1-454] Reading design checkpoint '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/l2p_fifo64/l2p_fifo64.dcp' for cell 'app_0/wb_exp_comp/l2p_dma/cmp_addr_fifo/U0'
+INFO: [Project 1-454] Reading design checkpoint '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_96x512_1/fifo_96x512.dcp' for cell 'app_0/wb_exp_comp/p2l_dma/cmp_to_wb_fifo/gen_fifo_96bit.cmp_fifo_96x512'
+INFO: [Project 1-454] Reading design checkpoint '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_64x512/fifo_64x512.dcp' for cell 'app_0/wb_exp_comp/wb32/cmp_fifo_to_wb/gen_fifo_64bit.cmp_fifo_64x512'
+INFO: [Netlist 29-17] Analyzing 1885 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. app_0/clk_gen_cmp/inst/clkin1_ibufg 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'app_0/clk_gen_cmp/clk_250_in' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved for implementation tool. [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/bram_rd53a_quad_ohio/.Xil/Vivado-26960-kekatlaspc9/dcp_20/clk_gen.edf:427]
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'fifo_32x512'. The XDC file /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_32x512/fifo_32x512/fifo_32x512.xdc will not be read for any cell of this module.
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_rx_dma_wb/ila_v6_1/constraints/ila.xdc] for cell 'app_0/dbg_2.rx_dma_wb_debug/inst'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_rx_dma_wb/ila_v6_1/constraints/ila.xdc] for cell 'app_0/dbg_2.rx_dma_wb_debug/inst'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_rx_dma_wb/ila_v6_1/constraints/ila.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/aurora_channel_debug/inst'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_rx_dma_wb/ila_v6_1/constraints/ila.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/aurora_channel_debug/inst'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_rx_dma_wb/ila_v6_1/constraints/ila.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/lane_loop[3].lane_cmp/aurora_lane_debug/inst'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_rx_dma_wb/ila_v6_1/constraints/ila.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/lane_loop[3].lane_cmp/aurora_lane_debug/inst'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_rx_dma_wb/ila_v6_1/constraints/ila.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/lane_loop[2].lane_cmp/aurora_lane_debug/inst'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_rx_dma_wb/ila_v6_1/constraints/ila.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/lane_loop[2].lane_cmp/aurora_lane_debug/inst'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_rx_dma_wb/ila_v6_1/constraints/ila.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/lane_loop[1].lane_cmp/aurora_lane_debug/inst'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_rx_dma_wb/ila_v6_1/constraints/ila.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/lane_loop[1].lane_cmp/aurora_lane_debug/inst'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_rx_dma_wb/ila_v6_1/constraints/ila.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/lane_loop[0].lane_cmp/aurora_lane_debug/inst'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_rx_dma_wb/ila_v6_1/constraints/ila.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/lane_loop[0].lane_cmp/aurora_lane_debug/inst'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/l2p_fifo64/l2p_fifo64/l2p_fifo64.xdc] for cell 'app_0/wb_exp_comp/l2p_dma/cmp_data_fifo/U0/U0'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/l2p_fifo64/l2p_fifo64/l2p_fifo64.xdc] for cell 'app_0/wb_exp_comp/l2p_dma/cmp_data_fifo/U0/U0'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/l2p_fifo64/l2p_fifo64/l2p_fifo64.xdc] for cell 'app_0/wb_exp_comp/l2p_dma/cmp_addr_fifo/U0/U0'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/l2p_fifo64/l2p_fifo64/l2p_fifo64.xdc] for cell 'app_0/wb_exp_comp/l2p_dma/cmp_addr_fifo/U0/U0'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_64x512/fifo_64x512/fifo_64x512.xdc] for cell 'app_0/wb_exp_comp/wb32/cmp_from_wb_fifo/gen_fifo_64bit.cmp_fifo_64x512/U0'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_64x512/fifo_64x512/fifo_64x512.xdc] for cell 'app_0/wb_exp_comp/wb32/cmp_from_wb_fifo/gen_fifo_64bit.cmp_fifo_64x512/U0'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_64x512/fifo_64x512/fifo_64x512.xdc] for cell 'app_0/wb_exp_comp/wb32/cmp_fifo_to_wb/gen_fifo_64bit.cmp_fifo_64x512/U0'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_64x512/fifo_64x512/fifo_64x512.xdc] for cell 'app_0/wb_exp_comp/wb32/cmp_fifo_to_wb/gen_fifo_64bit.cmp_fifo_64x512/U0'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_96x512_1/fifo_96x512/fifo_96x512.xdc] for cell 'app_0/wb_exp_comp/p2l_dma/cmp_to_wb_fifo/gen_fifo_96bit.cmp_fifo_96x512/U0'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_96x512_1/fifo_96x512/fifo_96x512.xdc] for cell 'app_0/wb_exp_comp/p2l_dma/cmp_to_wb_fifo/gen_fifo_96bit.cmp_fifo_96x512/U0'
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'fifo_256x16'. The XDC file /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_256x16/fifo_256x16/fifo_256x16.xdc will not be read for any cell of this module.
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_channel_fifo/rx_channel_fifo/rx_channel_fifo.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/lane_loop[0].cmp_lane_fifo/U0'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_channel_fifo/rx_channel_fifo/rx_channel_fifo.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/lane_loop[0].cmp_lane_fifo/U0'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_channel_fifo/rx_channel_fifo/rx_channel_fifo.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/lane_loop[1].cmp_lane_fifo/U0'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_channel_fifo/rx_channel_fifo/rx_channel_fifo.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/lane_loop[1].cmp_lane_fifo/U0'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_channel_fifo/rx_channel_fifo/rx_channel_fifo.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/lane_loop[2].cmp_lane_fifo/U0'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_channel_fifo/rx_channel_fifo/rx_channel_fifo.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/lane_loop[2].cmp_lane_fifo/U0'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_channel_fifo/rx_channel_fifo/rx_channel_fifo.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/lane_loop[3].cmp_lane_fifo/U0'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_channel_fifo/rx_channel_fifo/rx_channel_fifo.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/lane_loop[3].cmp_lane_fifo/U0'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_channel_fifo/rx_channel_fifo/rx_channel_fifo.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].cmp_rx_channel_fifo/U0'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_channel_fifo/rx_channel_fifo/rx_channel_fifo.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].cmp_rx_channel_fifo/U0'
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'fifo_29x32'. The XDC file /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_29x32/fifo_29x32/fifo_29x32.xdc will not be read for any cell of this module.
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'fifo_8x32'. The XDC file /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_8x32/fifo_8x32/fifo_8x32.xdc will not be read for any cell of this module.
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/tx_fifo/tx_fifo/tx_fifo.xdc] for cell 'app_0/wb_dev_gen.rd53_type_tx.cmp_wb_tx_core/tx_channels[0].cmp_tx_channel/cmp_tx_fifo/U0'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/tx_fifo/tx_fifo/tx_fifo.xdc] for cell 'app_0/wb_dev_gen.rd53_type_tx.cmp_wb_tx_core/tx_channels[0].cmp_tx_channel/cmp_tx_fifo/U0'
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'fifo_605x32'. The XDC file /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_605x32/fifo_605x32/fifo_605x32.xdc will not be read for any cell of this module.
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_bridge_ctrl_fifo/rx_bridge_ctrl_fifo/rx_bridge_ctrl_fifo.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_bridge/cmp_rx_bridge_ctrl_fifo/U0'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_bridge_ctrl_fifo/rx_bridge_ctrl_fifo/rx_bridge_ctrl_fifo.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_bridge/cmp_rx_bridge_ctrl_fifo/U0'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_bridge_fifo/rx_bridge_fifo/rx_bridge_fifo.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_bridge/cmp_rx_bridge_fifo/U0'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_bridge_fifo/rx_bridge_fifo/rx_bridge_fifo.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_bridge/cmp_rx_bridge_fifo/U0'
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'ila_ddr'. The XDC file /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_ddr/ila_v6_1/constraints/ila.xdc will not be read for any cell of this module.
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'ila_axis'. The XDC file /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_axis/ila_v6_1/constraints/ila.xdc will not be read for any cell of this module.
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/axis_data_fifo_1/axis_data_fifo_1/axis_data_fifo_1.xdc] for cell 'app_0/axis_tx_fifo/inst'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/axis_data_fifo_1/axis_data_fifo_1/axis_data_fifo_1.xdc] for cell 'app_0/axis_tx_fifo/inst'
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'ila_wsh_pipe'. The XDC file /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_wsh_pipe/ila_v6_1/constraints/ila.xdc will not be read for any cell of this module.
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/axis_data_fifo_0/axis_data_fifo_0/axis_data_fifo_0.xdc] for cell 'app_0/axis_rx_fifo/inst'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/axis_data_fifo_0/axis_data_fifo_0/axis_data_fifo_0.xdc] for cell 'app_0/axis_rx_fifo/inst'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/clk_gen/clk_gen_board.xdc] for cell 'app_0/clk_gen_cmp/inst'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/clk_gen/clk_gen_board.xdc] for cell 'app_0/clk_gen_cmp/inst'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/clk_gen/clk_gen.xdc] for cell 'app_0/clk_gen_cmp/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/clk_gen/clk_gen.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/clk_gen/clk_gen.xdc:57]
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/clk_gen/clk_gen.xdc] for cell 'app_0/clk_gen_cmp/inst'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/pcie_7x_0/source/pcie_7x_0-PCIE_X0Y0.xdc] for cell 'pcie_0/inst'
+INFO: [Timing 38-2] Deriving generated clocks [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/pcie_7x_0/source/pcie_7x_0-PCIE_X0Y0.xdc:118]
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/pcie_7x_0/source/pcie_7x_0-PCIE_X0Y0.xdc] for cell 'pcie_0/inst'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/constrs_kc705.xdc]
+WARNING: [Vivado 12-180] No cells matched 'pcie_0/U0/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].gt_wrapper_i/gtx_channel.gtxe2_channel_i'. [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/constrs_kc705.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/constrs_kc705.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-180] No cells matched 'pcie_0/U0/inst/gt_top_i/pipe_wrapper_i/pipe_lane[1].gt_wrapper_i/gtx_channel.gtxe2_channel_i'. [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/constrs_kc705.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/constrs_kc705.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-180] No cells matched 'pcie_0/U0/inst/gt_top_i/pipe_wrapper_i/pipe_lane[2].gt_wrapper_i/gtx_channel.gtxe2_channel_i'. [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/constrs_kc705.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/constrs_kc705.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-180] No cells matched 'pcie_0/U0/inst/gt_top_i/pipe_wrapper_i/pipe_lane[3].gt_wrapper_i/gtx_channel.gtxe2_channel_i'. [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/constrs_kc705.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/constrs_kc705.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/constrs_kc705.xdc]
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/constrs_kc705_timing.xdc]
+WARNING: [Vivado 12-508] No pins matched 'pcie_0/U0/inst/pcie_top_i/pcie_7x_i/pcie_block_i/CFGINTERRUPTN'. [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/constrs_kc705_timing.xdc:3]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_pins pcie_0/U0/inst/pcie_top_i/pcie_7x_i/pcie_block_i/CFGINTERRUPTN]'. [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/constrs_kc705_timing.xdc:3]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/constrs_kc705_timing.xdc]
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/constrs_kc705_ila.xdc]
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/constrs_kc705_ila.xdc]
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/kc705-fmc-quad-dp-ohio-dbyarr-dataC.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sda_io'. [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/kc705-fmc-quad-dp-ohio-dbyarr-dataC.xdc:136]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/kc705-fmc-quad-dp-ohio-dbyarr-dataC.xdc:136]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'scl_io'. [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/kc705-fmc-quad-dp-ohio-dbyarr-dataC.xdc:137]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/kc705-fmc-quad-dp-ohio-dbyarr-dataC.xdc:137]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-69] Command failed: Slew type 'FAST' is not supported by I/O standard 'LVDS_25' [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/kc705-fmc-quad-dp-ohio-dbyarr-dataC.xdc:144]
+WARNING: [Vivado 12-584] No ports matched 'ext_busy_*'. [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/kc705-fmc-quad-dp-ohio-dbyarr-dataC.xdc:149]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/kc705-fmc-quad-dp-ohio-dbyarr-dataC.xdc:149]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sda_io'. [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/kc705-fmc-quad-dp-ohio-dbyarr-dataC.xdc:156]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/kc705-fmc-quad-dp-ohio-dbyarr-dataC.xdc:156]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'scl_io'. [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/kc705-fmc-quad-dp-ohio-dbyarr-dataC.xdc:157]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/kc705-fmc-quad-dp-ohio-dbyarr-dataC.xdc:157]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-646] clock 'clk_160_s' not found. [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/kc705-fmc-quad-dp-ohio-dbyarr-dataC.xdc:186]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock clk_160_s'. [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/kc705-fmc-quad-dp-ohio-dbyarr-dataC.xdc:186]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'clk_160_s' not found. [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/kc705-fmc-quad-dp-ohio-dbyarr-dataC.xdc:187]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock clk_160_s'. [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/kc705-fmc-quad-dp-ohio-dbyarr-dataC.xdc:187]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/kc705-fmc-quad-dp-ohio-dbyarr-dataC.xdc]
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_rx_dma_wb/ila_rx_dma_wb.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_rx_dma_wb/ila_rx_dma_wb.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_rx_dma_wb/ila_rx_dma_wb.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_rx_dma_wb/ila_rx_dma_wb.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_rx_dma_wb/ila_rx_dma_wb.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/ila_rx_dma_wb/ila_rx_dma_wb.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/l2p_fifo64/l2p_fifo64.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/l2p_fifo64/l2p_fifo64.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_64x512/fifo_64x512.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_64x512/fifo_64x512.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_96x512_1/fifo_96x512.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_channel_fifo/rx_channel_fifo.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_channel_fifo/rx_channel_fifo.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_channel_fifo/rx_channel_fifo.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_channel_fifo/rx_channel_fifo.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_channel_fifo/rx_channel_fifo.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/tx_fifo/tx_fifo.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_bridge_ctrl_fifo/rx_bridge_ctrl_fifo.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_bridge_fifo/rx_bridge_fifo.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/axis_data_fifo_1/axis_data_fifo_1.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/axis_data_fifo_0/axis_data_fifo_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/clk_gen/clk_gen.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/pcie_7x_0/pcie_7x_0.dcp'
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'fifo_32x512'. The XDC file /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_32x512/fifo_32x512/fifo_32x512_clocks.xdc will not be read for any cell of this module.
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/l2p_fifo64/l2p_fifo64/l2p_fifo64_clocks.xdc] for cell 'app_0/wb_exp_comp/l2p_dma/cmp_data_fifo/U0/U0'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/l2p_fifo64/l2p_fifo64/l2p_fifo64_clocks.xdc] for cell 'app_0/wb_exp_comp/l2p_dma/cmp_data_fifo/U0/U0'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/l2p_fifo64/l2p_fifo64/l2p_fifo64_clocks.xdc] for cell 'app_0/wb_exp_comp/l2p_dma/cmp_addr_fifo/U0/U0'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/l2p_fifo64/l2p_fifo64/l2p_fifo64_clocks.xdc] for cell 'app_0/wb_exp_comp/l2p_dma/cmp_addr_fifo/U0/U0'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_64x512/fifo_64x512/fifo_64x512_clocks.xdc] for cell 'app_0/wb_exp_comp/wb32/cmp_from_wb_fifo/gen_fifo_64bit.cmp_fifo_64x512/U0'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_64x512/fifo_64x512/fifo_64x512_clocks.xdc] for cell 'app_0/wb_exp_comp/wb32/cmp_from_wb_fifo/gen_fifo_64bit.cmp_fifo_64x512/U0'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_64x512/fifo_64x512/fifo_64x512_clocks.xdc] for cell 'app_0/wb_exp_comp/wb32/cmp_fifo_to_wb/gen_fifo_64bit.cmp_fifo_64x512/U0'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_64x512/fifo_64x512/fifo_64x512_clocks.xdc] for cell 'app_0/wb_exp_comp/wb32/cmp_fifo_to_wb/gen_fifo_64bit.cmp_fifo_64x512/U0'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_96x512_1/fifo_96x512/fifo_96x512_clocks.xdc] for cell 'app_0/wb_exp_comp/p2l_dma/cmp_to_wb_fifo/gen_fifo_96bit.cmp_fifo_96x512/U0'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_96x512_1/fifo_96x512/fifo_96x512_clocks.xdc] for cell 'app_0/wb_exp_comp/p2l_dma/cmp_to_wb_fifo/gen_fifo_96bit.cmp_fifo_96x512/U0'
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'fifo_256x16'. The XDC file /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_256x16/fifo_256x16/fifo_256x16_clocks.xdc will not be read for any cell of this module.
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_channel_fifo/rx_channel_fifo/rx_channel_fifo_clocks.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/lane_loop[0].cmp_lane_fifo/U0'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_channel_fifo/rx_channel_fifo/rx_channel_fifo_clocks.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/lane_loop[0].cmp_lane_fifo/U0'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_channel_fifo/rx_channel_fifo/rx_channel_fifo_clocks.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/lane_loop[1].cmp_lane_fifo/U0'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_channel_fifo/rx_channel_fifo/rx_channel_fifo_clocks.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/lane_loop[1].cmp_lane_fifo/U0'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_channel_fifo/rx_channel_fifo/rx_channel_fifo_clocks.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/lane_loop[2].cmp_lane_fifo/U0'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_channel_fifo/rx_channel_fifo/rx_channel_fifo_clocks.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/lane_loop[2].cmp_lane_fifo/U0'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_channel_fifo/rx_channel_fifo/rx_channel_fifo_clocks.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/lane_loop[3].cmp_lane_fifo/U0'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_channel_fifo/rx_channel_fifo/rx_channel_fifo_clocks.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].rd53_type.cmp_aurora_rx_channel/lane_loop[3].cmp_lane_fifo/U0'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_channel_fifo/rx_channel_fifo/rx_channel_fifo_clocks.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].cmp_rx_channel_fifo/U0'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_channel_fifo/rx_channel_fifo/rx_channel_fifo_clocks.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_core/rx_channels[0].cmp_rx_channel_fifo/U0'
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'fifo_29x32'. The XDC file /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_29x32/fifo_29x32/fifo_29x32_clocks.xdc will not be read for any cell of this module.
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'fifo_8x32'. The XDC file /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_8x32/fifo_8x32/fifo_8x32_clocks.xdc will not be read for any cell of this module.
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/tx_fifo/tx_fifo/tx_fifo_clocks.xdc] for cell 'app_0/wb_dev_gen.rd53_type_tx.cmp_wb_tx_core/tx_channels[0].cmp_tx_channel/cmp_tx_fifo/U0'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/tx_fifo/tx_fifo/tx_fifo_clocks.xdc] for cell 'app_0/wb_dev_gen.rd53_type_tx.cmp_wb_tx_core/tx_channels[0].cmp_tx_channel/cmp_tx_fifo/U0'
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'fifo_605x32'. The XDC file /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/fifo_605x32/fifo_605x32/fifo_605x32_clocks.xdc will not be read for any cell of this module.
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_bridge_ctrl_fifo/rx_bridge_ctrl_fifo/rx_bridge_ctrl_fifo_clocks.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_bridge/cmp_rx_bridge_ctrl_fifo/U0'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_bridge_ctrl_fifo/rx_bridge_ctrl_fifo/rx_bridge_ctrl_fifo_clocks.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_bridge/cmp_rx_bridge_ctrl_fifo/U0'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_bridge_fifo/rx_bridge_fifo/rx_bridge_fifo_clocks.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_bridge/cmp_rx_bridge_fifo/U0'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/rx_bridge_fifo/rx_bridge_fifo/rx_bridge_fifo_clocks.xdc] for cell 'app_0/wb_dev_gen.cmp_wb_rx_bridge/cmp_rx_bridge_fifo/U0'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/axis_data_fifo_1/axis_data_fifo_1/axis_data_fifo_1_clocks.xdc] for cell 'app_0/axis_tx_fifo/inst'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/axis_data_fifo_1/axis_data_fifo_1/axis_data_fifo_1_clocks.xdc] for cell 'app_0/axis_tx_fifo/inst'
+Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/axis_data_fifo_0/axis_data_fifo_0/axis_data_fifo_0_clocks.xdc] for cell 'app_0/axis_rx_fifo/inst'
+Finished Parsing XDC File [/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/ip-cores/kintex7/axis_data_fifo_0/axis_data_fifo_0/axis_data_fifo_0_clocks.xdc] for cell 'app_0/axis_rx_fifo/inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pcie_0/inst/inst/phy_lnk_up_cdc'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pcie_0/inst/inst/phy_lnk_up_cdc'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pcie_0/inst/inst/pl_received_hot_rst_cdc'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pcie_0/inst/inst/pl_received_hot_rst_cdc'
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 966 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 960 instances
+  IBUFDS_DIFF_OUT => IBUFDS_DIFF_OUT (IBUFDS, IBUFDS): 4 instances
+  OBUFDS => OBUFDS: 2 instances
+
+open_run: Time (s): cpu = 00:02:36 ; elapsed = 00:01:50 . Memory (MB): peak = 7464.398 ; gain = 37.020 ; free physical = 524 ; free virtual = 2526
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 14 19:09:13 2018...

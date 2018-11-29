@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Fri Oct 12 06:42:37 2018
+# Process ID: 22901
+# Current directory: /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/bram_rd53a_quad_ohio/yarr/yarr.runs/fifo_64x512_synth_1
+# Command line: vivado -log fifo_64x512.vds -mode batch -messageDb vivado.pb -notrace -source fifo_64x512.tcl
+# Log file: /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/bram_rd53a_quad_ohio/yarr/yarr.runs/fifo_64x512_synth_1/fifo_64x512.vds
+# Journal file: /home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/bram_rd53a_quad_ohio/yarr/yarr.runs/fifo_64x512_synth_1/vivado.jou
+#-----------------------------------------------------------
+source fifo_64x512.tcl -notrace

@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="ila_axis_synth_1" LaunchDir="/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/bram_rd53a_quad_ohio/yarr/project_1/project_1.runs/ila_axis_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fifo_256x16_synth_1" LaunchDir="/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/bram_rd53a_quad_ohio/yarr/project_1/project_1.runs/fifo_256x16_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="pcie_7x_0_synth_1" LaunchDir="/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/bram_rd53a_quad_ohio/yarr/project_1/project_1.runs/pcie_7x_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ila_ddr_synth_1" LaunchDir="/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/bram_rd53a_quad_ohio/yarr/project_1/project_1.runs/ila_ddr_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fifo_32x512_synth_1" LaunchDir="/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/bram_rd53a_quad_ohio/yarr/project_1/project_1.runs/fifo_32x512_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="rx_bridge_ctrl_fifo_synth_1" LaunchDir="/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/bram_rd53a_quad_ohio/yarr/project_1/project_1.runs/rx_bridge_ctrl_fifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fifo_605x32_synth_1" LaunchDir="/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/bram_rd53a_quad_ohio/yarr/project_1/project_1.runs/fifo_605x32_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ila_wsh_pipe_synth_1" LaunchDir="/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/bram_rd53a_quad_ohio/yarr/project_1/project_1.runs/ila_wsh_pipe_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fifo_64x512_synth_1" LaunchDir="/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/bram_rd53a_quad_ohio/yarr/project_1/project_1.runs/fifo_64x512_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="axis_data_fifo_1_synth_1" LaunchDir="/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/bram_rd53a_quad_ohio/yarr/project_1/project_1.runs/axis_data_fifo_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fifo_8x32_synth_1" LaunchDir="/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/bram_rd53a_quad_ohio/yarr/project_1/project_1.runs/fifo_8x32_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fifo_29x32_synth_1" LaunchDir="/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/bram_rd53a_quad_ohio/yarr/project_1/project_1.runs/fifo_29x32_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="rx_channel_fifo_synth_1" LaunchDir="/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/bram_rd53a_quad_ohio/yarr/project_1/project_1.runs/rx_channel_fifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ila_rx_dma_wb_synth_1" LaunchDir="/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/bram_rd53a_quad_ohio/yarr/project_1/project_1.runs/ila_rx_dma_wb_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="l2p_fifo64_synth_1" LaunchDir="/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/bram_rd53a_quad_ohio/yarr/project_1/project_1.runs/l2p_fifo64_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="tx_fifo_synth_1" LaunchDir="/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/bram_rd53a_quad_ohio/yarr/project_1/project_1.runs/tx_fifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fifo_96x512_synth_1" LaunchDir="/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/bram_rd53a_quad_ohio/yarr/project_1/project_1.runs/fifo_96x512_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="rx_bridge_fifo_synth_1" LaunchDir="/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/bram_rd53a_quad_ohio/yarr/project_1/project_1.runs/rx_bridge_fifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="clk_gen_synth_1" LaunchDir="/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/bram_rd53a_quad_ohio/yarr/project_1/project_1.runs/clk_gen_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="axis_data_fifo_0_synth_1" LaunchDir="/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/bram_rd53a_quad_ohio/yarr/project_1/project_1.runs/axis_data_fifo_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/bram_rd53a_quad_ohio/yarr/project_1/project_1.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="ila_axis_synth_1"/>
+		<Parent Id="fifo_256x16_synth_1"/>
+		<Parent Id="pcie_7x_0_synth_1"/>
+		<Parent Id="ila_ddr_synth_1"/>
+		<Parent Id="fifo_32x512_synth_1"/>
+		<Parent Id="rx_bridge_ctrl_fifo_synth_1"/>
+		<Parent Id="fifo_605x32_synth_1"/>
+		<Parent Id="ila_wsh_pipe_synth_1"/>
+		<Parent Id="fifo_64x512_synth_1"/>
+		<Parent Id="axis_data_fifo_1_synth_1"/>
+		<Parent Id="fifo_8x32_synth_1"/>
+		<Parent Id="fifo_29x32_synth_1"/>
+		<Parent Id="rx_channel_fifo_synth_1"/>
+		<Parent Id="ila_rx_dma_wb_synth_1"/>
+		<Parent Id="l2p_fifo64_synth_1"/>
+		<Parent Id="tx_fifo_synth_1"/>
+		<Parent Id="fifo_96x512_synth_1"/>
+		<Parent Id="rx_bridge_fifo_synth_1"/>
+		<Parent Id="clk_gen_synth_1"/>
+		<Parent Id="axis_data_fifo_0_synth_1"/>
+	</Run>
+</Runs>
+
