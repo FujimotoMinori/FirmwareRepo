@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Sun Oct 14 17:49:19 2018">
+<application name="pa" timeStamp="Tue Dec 11 15:57:21 2018">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="dc1f718992d1404487dd20ed8fa820d2" type="ProjectID"/>
 <property name="ProjectIteration" value="3" type="ProjectIteration"/>
@@ -27,19 +27,15 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="WriteCfgMemFile" value="1" type="JavaHandler"/>
 </item>
 <item name="Gui Resources Info">
-<property name="PAResourceCommand.PACommandNames_WRITE_CONFIG_MEMORY_FILE, Generate Memory Configuration File" value="1" type="GuiResourceData"/>
-<property name="PAResourceTtoZ.TouchpointSurveyDialog_REMIND_ME_LATER, Remind me Later" value="1" type="GuiResourceData"/>
-<property name="PAResourceTtoZ.WriteCfgMemFileDialog_FORMAT, 128" value="1" type="GuiResourceData"/>
-<property name="PAResourceTtoZ.WriteCfgMemFileDialog_INTERFACE, BPIx16, 9" value="1" type="GuiResourceData"/>
-<property name="PAResourceTtoZ.WriteCfgMemFileDialog_LOAD_BITSTREAM_FILES, Load bitstream files, true" value="1" type="GuiResourceData"/>
-<property name="PAResourceTtoZ.WriteCfgMemFileDialog_SPECIFY_BITFILE_FILENAME, (String" value="1" type="GuiResourceData"/>
-<property name="PAResourceTtoZ.WriteCfgMemFileDialog_SPECIFY_CONFIGURATION_FILENAME, (String" value="1" type="GuiResourceData"/>
-<property name="RDIResource.BaseDialog_OK, OK" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Constraints, constrs_1, kc705-fmc-quad-dp-ohio-dbyarr.xdc], 29, false" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Constraints, constrs_1, kc705-fmc-quad-dp-ohio-dbyarr.xdc], 29, false, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Constraints, constrs_1], 26, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Constraints], 25, true" value="1" type="GuiResourceData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="94" type="GuiMode"/>
+<property name="GuiMode" value="184" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="73" type="TclMode"/>
+<property name="TclMode" value="141" type="TclMode"/>
 </item>
 </section>
 </application>

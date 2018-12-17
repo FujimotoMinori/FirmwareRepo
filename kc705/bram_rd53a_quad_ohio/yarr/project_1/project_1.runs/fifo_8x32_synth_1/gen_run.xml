@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="fifo_8x32_synth_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1539459115">
-  <File Type="RDS-DCP" Name="fifo_8x32.dcp"/>
-  <File Type="RDS-UTIL-PB" Name="fifo_8x32_utilization_synth.pb"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="fifo_8x32_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="fifo_8x32_timing_summary_synth.pb"/>
-  <File Type="RDS-RDS" Name="fifo_8x32.vds"/>
   <File Type="PA-TCL" Name="fifo_8x32.tcl"/>
+  <File Type="RDS-RDS" Name="fifo_8x32.vds"/>
   <File Type="RDS-PROPCONSTRS" Name="fifo_8x32_drc_synth.rpt"/>
   <File Type="RDS-UTIL" Name="fifo_8x32_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="fifo_8x32_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="fifo_8x32.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="fifo_8x32_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="fifo_8x32_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/fifo_8x32">
     <File Path="$PPRDIR/../../../../../ip-cores/kintex7/fifo_8x32/fifo_8x32.xci">
       <FileInfo>

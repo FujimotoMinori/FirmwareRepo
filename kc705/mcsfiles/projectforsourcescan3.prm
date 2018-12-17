@@ -1,0 +1,11 @@
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          BPIX16
+Size               128M
+Start Address      0x00000000
+End Address        0x07FFFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x00AE9D9B    Dec 12 16:15:38 2018    /home/pixeldaq/YARR_rd53a/Yarr-fw/syn/kc705/projectforsourcescan/projectforsourcescan.runs/impl_1/top_level.bit

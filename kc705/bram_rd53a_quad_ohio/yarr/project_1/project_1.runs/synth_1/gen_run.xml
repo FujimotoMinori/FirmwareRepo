@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1539505701">
+  <File Type="RDS-PROPCONSTRS" Name="top_level_drc_synth.rpt"/>
+  <File Type="RDS-UTIL" Name="top_level_utilization_synth.rpt"/>
+  <File Type="RDS-RDS" Name="top_level.vds"/>
   <File Type="VDS-TIMING-PB" Name="top_level_timing_summary_synth.pb"/>
+  <File Type="PA-TCL" Name="top_level.tcl"/>
   <File Type="VDS-TIMINGSUMMARY" Name="top_level_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="top_level.dcp"/>
   <File Type="RDS-UTIL-PB" Name="top_level_utilization_synth.pb"/>
-  <File Type="RDS-UTIL" Name="top_level_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="top_level_drc_synth.rpt"/>
-  <File Type="RDS-RDS" Name="top_level.vds"/>
-  <File Type="PA-TCL" Name="top_level.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PPRDIR/../../../../../rtl/kintex7/rx-core/decode_8b10b/decode_8b10b_pkg.vhd">
@@ -475,24 +475,24 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="axis_data_fifo_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="clk_gen"/>
-  <BlockFileSet Type="BlockSrcs" Name="fifo_96x512"/>
-  <BlockFileSet Type="BlockSrcs" Name="tx_fifo"/>
-  <BlockFileSet Type="BlockSrcs" Name="ila_rx_dma_wb"/>
-  <BlockFileSet Type="BlockSrcs" Name="rx_channel_fifo"/>
-  <BlockFileSet Type="BlockSrcs" Name="rx_bridge_fifo"/>
-  <BlockFileSet Type="BlockSrcs" Name="axis_data_fifo_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="fifo_64x512"/>
+  <BlockFileSet Type="BlockSrcs" Name="fifo_605x32"/>
   <BlockFileSet Type="BlockSrcs" Name="l2p_fifo64"/>
   <BlockFileSet Type="BlockSrcs" Name="ila_wsh_pipe"/>
-  <BlockFileSet Type="BlockSrcs" Name="fifo_605x32"/>
-  <BlockFileSet Type="BlockSrcs" Name="rx_bridge_ctrl_fifo"/>
-  <BlockFileSet Type="BlockSrcs" Name="fifo_32x512"/>
   <BlockFileSet Type="BlockSrcs" Name="ila_ddr"/>
-  <BlockFileSet Type="BlockSrcs" Name="pcie_7x_0"/>
   <BlockFileSet Type="BlockSrcs" Name="fifo_8x32"/>
   <BlockFileSet Type="BlockSrcs" Name="fifo_256x16"/>
-  <BlockFileSet Type="BlockSrcs" Name="fifo_29x32"/>
+  <BlockFileSet Type="BlockSrcs" Name="rx_channel_fifo"/>
+  <BlockFileSet Type="BlockSrcs" Name="clk_gen"/>
+  <BlockFileSet Type="BlockSrcs" Name="tx_fifo"/>
+  <BlockFileSet Type="BlockSrcs" Name="fifo_32x512"/>
+  <BlockFileSet Type="BlockSrcs" Name="ila_rx_dma_wb"/>
   <BlockFileSet Type="BlockSrcs" Name="ila_axis"/>
+  <BlockFileSet Type="BlockSrcs" Name="fifo_29x32"/>
+  <BlockFileSet Type="BlockSrcs" Name="fifo_96x512"/>
+  <BlockFileSet Type="BlockSrcs" Name="axis_data_fifo_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="rx_bridge_fifo"/>
+  <BlockFileSet Type="BlockSrcs" Name="axis_data_fifo_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="rx_bridge_ctrl_fifo"/>
+  <BlockFileSet Type="BlockSrcs" Name="pcie_7x_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="fifo_64x512"/>
 </GenRun>

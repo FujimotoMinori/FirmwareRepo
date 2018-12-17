@@ -1,0 +1,112 @@
+/*
+
+Vivado v2016.2 (64-bit)
+SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
+Process ID: 3876
+
+Current time: 	12/5/18 1:31:48 PM JST
+Time zone: 	Japan Standard Time (Asia/Tokyo)
+
+OS: CentOS Linux release 7.5.1804 (Core) 
+Version: 3.10.0-862.14.4.el7.x86_64
+Architecture: amd64
+Available processors (cores): 4
+
+DISPLAY: :0
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	/opt/Xilinx/Vivado/2016.2/tps/lnx64/jre
+
+User name: 	pixeldaq
+User home directory: /home/pixeldaq
+User working directory: /home/pixeldaq/FirmwareRepo/kc705/bram_rd53a_quad_ohio/yarr/project_1
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI Base root directory: /opt/Xilinx/Vivado
+RDI Data directory: /opt/Xilinx/Vivado/2016.2/data
+RDI Bin directory: /opt/Xilinx/Vivado/2016.2/bin
+
+Vivado preferences path: /home/pixeldaq/.Xilinx/Vivado/2016.2/vivado.ini
+Vivado layouts directory: /home/pixeldaq/.Xilinx/Vivado/2016.2/layouts
+
+GUI allocated memory:	188 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 4,874 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 34 MB (+33104kb) [00:00:06]
+// [Engine Memory]: 4,864 MB (+4948711kb) [00:00:06]
+// Opening Vivado Project: project_1.xpr. Version: Vivado v2016.2 
+// bL:g (cv:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project project_1.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project project_1.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from '/home/atlasj/work/XpressK7_RD53A/YARR_ocha/debug/Yarr-fw/syn/kc705/bram_rd53a_quad_ohio/yarr/project_1' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// [GUI Memory]: 42 MB (+6985kb) [00:00:10]
+// HMemoryUtils.trashcanNow. Engine heap size: 4,896 MB. GUI used memory: 23 MB. Current time: 12/5/18 1:31:50 PM JST
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 47 MB (+2938kb) [00:00:13]
+// [GUI Memory]: 140 MB (+94829kb) [00:00:15]
+// [GUI Memory]: 150 MB (+3322kb) [00:00:16]
+// [Engine Memory]: 5,110 MB (+3106kb) [00:00:17]
+// [GUI Memory]: 159 MB (+804kb) [00:00:17]
+// [GUI Memory]: 168 MB (+1401kb) [00:00:18]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2016.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: project_1; location: /home/pixeldaq/FirmwareRepo/kc705/bram_rd53a_quad_ohio/yarr/project_1; part: xc7k325tffg900-2
+// Tcl Message: open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:15 . Memory (MB): peak = 6115.777 ; gain = 299.879 ; free physical = 5132 ; free virtual = 14014 
+dismissDialog("Open Project"); // bL:g (cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: update_compile_order -fileset sources_1 
+// a:a (cv:JFrame): Critical Messages: addNotify
+// Elapsed time: 14 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // i:a (JPanel:JComponent, a:a)
+dismissDialog("Critical Messages"); // a:a (cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 25, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 25, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 25, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Configuration Files]", 24, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 26, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, constrs_kc705_ila.xdc]", 30, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, kc705-fmc-quad-dp-ohio-dbyarr.xdc]", 29, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, kc705-fmc-quad-dp-ohio-dbyarr.xdc]", 29, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+// [GUI Memory]: 180 MB (+3437kb) [00:00:51]
+// HMemoryUtils.trashcanNow. Engine heap size: 5,199 MB. GUI used memory: 110 MB. Current time: 12/5/18 1:32:35 PM JST
+// Elapsed time: 75 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_level - Behavioral (bram_yarr_kc705.vhd)]", 2, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_level - Behavioral (bram_yarr_kc705.vhd)]", 2, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+// Elapsed time: 43 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ext"); // o:ao (az:f, cv:JFrame)
+// Elapsed time: 38 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "eudet"); // o:ao (az:f, cv:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 5,201 MB. GUI used memory: 112 MB. Current time: 12/5/18 2:02:35 PM JST
+// HMemoryUtils.trashcanNow. Engine heap size: 5,201 MB. GUI used memory: 107 MB. Current time: 12/5/18 2:32:35 PM JST
+// HMemoryUtils.trashcanNow. Engine heap size: 5,201 MB. GUI used memory: 106 MB. Current time: 12/5/18 3:02:35 PM JST
+// HMemoryUtils.trashcanNow. Engine heap size: 5,201 MB. GUI used memory: 106 MB. Current time: 12/5/18 3:32:35 PM JST
+// HMemoryUtils.trashcanNow. Engine heap size: 5,201 MB. GUI used memory: 106 MB. Current time: 12/5/18 4:02:35 PM JST
