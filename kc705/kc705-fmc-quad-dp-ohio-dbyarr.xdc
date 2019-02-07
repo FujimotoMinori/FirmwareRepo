@@ -1,5 +1,7 @@
 # convert from yarr-fw 
-# one data 1 ext_trg 1 eudet  RX^CHANNELS in board package is 1
+# Port A to data
+# Port D to ext_trg
+# Port B to eudet 
 #Fixed polarity
 #la25_p
 #la25_n
